@@ -10,13 +10,13 @@ app.set('view engine', 'handlebars');
 
 app.get("/",(req,res)=>{
 
-    res.render("home",{
+    res.render("HOME",{
         title:"Home Page"
     })
 })
 
 
-const PORT  = 3000;
+const PORT  = process.env.PORT ||  3000;
 app.listen(3000, ()=>{
     console.log("Web Site is up and running");
 })
