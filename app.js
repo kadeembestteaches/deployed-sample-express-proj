@@ -10,7 +10,8 @@ app.set('view engine', 'handlebars');
 
 app.get("/",(req,res)=>{
 
-    res.render("HOME",{
+    //made change
+    res.render("home",{
         title:"Home Page"
     })
 })
